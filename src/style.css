@@ -1,0 +1,30 @@
+.fondo{
+    background-image: url(fondo.png);
+    background-repeat: no-repeat; 
+}
+
+.logo{ 
+    width: 320px;npm install
+    height: 200px;
+    margin:10px auto;
+    display:block;
+}
+
+.botones{
+    margin:10px auto;
+    display:block;
+
+}
+
+.pukachu{
+    width: 500px;
+    height: 400px;
+    margin:10px auto;
+    display:block; 
+}
+
+.texto{
+    margin:10px auto;
+    display:block; 
+    text-align:center;
+}
