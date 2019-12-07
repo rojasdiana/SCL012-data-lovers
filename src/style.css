@@ -1,18 +1,22 @@
-.fondo{
+body{
     background-image: url(fondo.png);
     background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover;
+  
 }
 
 .logo{ 
-    width: 320px;npm install
-    height: 200px;
-    margin:10px auto;
+    width: 400px;
+    height: 240px;
+    margin:auto;
     display:block;
 }
 
 .botones{
     margin:10px auto;
     display:block;
+    
 
 }
 
@@ -27,4 +31,13 @@
     margin:10px auto;
     display:block; 
     text-align:center;
+}
+
+footer{
+    width: 1500px;
+    height: 500px;
+    background-image: url(footer.png);
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover;
 }
