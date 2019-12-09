@@ -1,9 +1,10 @@
+
 body{
     background-image: url(fondo.png);
     background-repeat: no-repeat; 
     background-attachment: fixed;
     background-size: cover;
-  
+    
 }
 
 .logo{ 
@@ -15,23 +16,41 @@ body{
 
 .botones{
     margin:10px auto;
-    display:block;
+    display:flex; 
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
     
-
+    
 }
 
 .pukachu{
     width: 500px;
     height: 400px;
-    margin:10px auto;
-    display:block; 
+    margin: 70px;
+    display:flex;
+    justify-content: center;
+    align-content: center; 
 }
 
-.texto{
-    margin:10px auto;
-    display:block; 
-    text-align:center;
+h1{
+    font-family:Helvetica, sans-serif;
+    font-style: normal;
 }
+
+#text, .texto {
+    
+    margin:50px 250px ;
+    display:flex; 
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    
+}
+
+
 
 footer{
     width: 1500px;
@@ -41,3 +60,4 @@ footer{
     background-attachment: fixed;
     background-size: cover;
 }
+
