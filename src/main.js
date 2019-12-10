@@ -1,75 +1,82 @@
+import { filterPokemonType } from './data.js';
 
+const planta = document.getElementById('planta');
 
-import { filterPokemonType } from './data.js';//importando la funcion que filtra desde data
-import POKEMON from './data/pokemon/pokemon.js';//importando toda la data de pokemones desde data
-
-
-
-const planta = document.getElementById("planta");//creando constante de la funcion
-    planta.addEventListener("click", function(){//llamado a funcion mediante click
-
-     const plantaValue = document.getElementById("planta").value;//rescatando el valor del boton
-     const resultado = filterPokemonType(plantaValue);//enviando el valor como paramentro a la funcion
-
-     const divFiltrados = document.getElementById("pokemonesFiltrados");//obteniendo el div donde se mostrara el resultado de los pokemones
+planta.addEventListener('click', () => {
+     
+  const plantaValue = document.getElementById('planta').value;
+  const resultado = filterPokemonType(plantaValue);
+  const divFiltrados = document.getElementById('pokemonesFiltrados');
    
-    for (let i=0; i<resultado.length; i++){//recorriendo cada pokemon de la funcion "filterPokemonType"
-        divFiltrados.innerHTML= resultado[i].name;//imprimiendo en el div 
-    }
+  for (let i = 0; i < resultado.length; i += 1) {
+    divFiltrados.innerHTML += resultado[i].name;
+  }
+});
 
-   });
+const agua = document.getElementById('agua');
 
-
-   const agua = document.getElementById("agua");//creando constante de la funcion
-    agua.addEventListener("click", function(){//llamado a funcion mediante click
-
-     const aguaValue = document.getElementById("agua").value;//rescatando el valor del boton
-    filterPokemonType(aguaValue);//enviando el valor como paramentro a la funcion
-   });
-
-   const fuego = document.getElementById("fuego");//creando constante de la funcion
-   fuego.addEventListener("click", function(){//llamado a funcion mediante click
-
-    const fuegoValue = document.getElementById("fuego").value;//rescatando el valor del boton
-   const resultado= filterPokemonType(fuegoValue);//enviando el valor como paramentro a la funcion
-
-   const divFiltrados = document.getElementById("pokemonesFiltrados");//obteniendo el div donde se mostrara el resultado de los pokemones
+agua.addEventListener('click', () => {
+  const aguaValue = document.getElementById('agua').value;
+  const resultado = filterPokemonType(aguaValue);
+  const divFiltrados = document.getElementById('pokemonesFiltrados');
    
-    for (let i=0; i<resultado.length; i++){//recorriendo cada pokemon de la funcion "filterPokemonType"
-        divFiltrados.innerHTML+= resultado[i].name;//imprimiendo en el div 
-    }
-
+  for (let i = 0; i < resultado.length; i += 1) {
+    divFiltrados.innerHTML += resultado[i].name;
+  }
 });
 
+const fuego = document.getElementById('fuego');
 
+fuego.addEventListener('click', () => {
+  const fuegoValue = document.getElementById('fuego').value;
+  const resultado = filterPokemonType(fuegoValue);
+  const divFiltrados = document.getElementById('pokemonesFiltrados');
 
-  const aire = document.getElementById("aire");//creando constante de la funcion
-  aire.addEventListener("click", function(){//llamado a funcion mediante click
-
-   const aireValue = document.getElementById("aire").value;//rescatando el valor del boton
-  filterPokemonType(aireValue);//enviando el valor como paramentro a la funcion
- });
-
-
- const electrico = document.getElementById("electrico");//creando constante de la funcion
- electrico.addEventListener("click", function(){//llamado a funcion mediante click
-
-  const electricoValue = document.getElementById("electrico").value;//rescatando el valor del boton
- filterPokemonType(electricoValue);//enviando el valor como paramentro a la funcion
+  for (let i = 0; i < resultado.length; i += 1) {
+    divFiltrados.innerHTML += resultado[i].name;
+  }
 });
 
+const aire = document.getElementById('aire');
+aire.addEventListener('click', () => {
+  const aireValue = document.getElementById('aire').value;
+  const resultado = filterPokemonType(aireValue);
+  const divFiltrados = document.getElementById('pokemonesFiltrados');
 
-const psiquico = document.getElementById("psiquico");//creando constante de la funcion
-psiquico.addEventListener("click", function(){//llamado a funcion mediante click
-
- const psiquicoValue = document.getElementById("psiquico").value;//rescatando el valor del boton
-filterPokemonType(psiquicoValue);//enviando el valor como paramentro a la funcion
+  for (let i = 0; i < resultado.length; i += 1) {
+    divFiltrados.innerHTML += resultado[i].name;
+  }
 });
 
-const todos = document.getElementById("todos");//creando constante de la funcion
-todos.addEventListener("click", function(){//llamado a funcion mediante click
+const electrico = document.getElementById('electrico');
+electrico.addEventListener('click', () => {
+  const electricoValue = document.getElementById('electrico').value;
+  const resultado = filterPokemonType(electricoValue);
+  const divFiltrados = document.getElementById('pokemonesFiltrados');
 
- const todosValue = document.getElementById("todos").value;//rescatando el valor del boton
-filterPokemonType(todosValue);//enviando el valor como paramentro a la funcion
+  for (let i = 0; i < resultado.length; i += 1) {
+    divFiltrados.innerHTML += resultado[i].name;
+  }
 });
 
+const psiquico = document.getElementById('psiquico');
+psiquico.addEventListener('click', () => {
+  const psiquicoValue = document.getElementById('psiquico').value;
+  const resultado = filterPokemonType(psiquicoValue);
+  const divFiltrados = document.getElementById('pokemonesFiltrados');
+
+  for (let i = 0; i < resultado.length; i += 1) {
+    divFiltrados.innerHTML += resultado[i].name;
+  }
+});
+
+const todos = document.getElementById('todos');
+todos.addEventListener('click', () => {
+  const todosValue = document.getElementById('todos').value;
+  const resultado = filterPokemonType(todosValue);
+  const divFiltrados = document.getElementById('pokemonesFiltrados');
+
+  for (let i = 0; i < resultado.length; i += 1) {
+    divFiltrados.innerHTML += resultado[i].name;
+  }
+});

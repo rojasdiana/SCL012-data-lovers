@@ -1,10 +1,8 @@
-
 body{
     background-image: url(fondo.png);
     background-repeat: no-repeat; 
     background-attachment: fixed;
-    background-size: cover;
-    
+    background-size: cover;  
 }
 
 .logo{ 
@@ -15,22 +13,46 @@ body{
 }
 
 .botones{
+  
     margin:10px auto;
     display:flex; 
     justify-content: center;
-    flex-flow: column;
     align-items: center;
+}
+
+
+
+
     
-    
+
+.btnFilter{
+    width: 30%;
+    height: 30%;
+    font-weight: 400;
+    font-size: 20px;
+    color: #43AC99;
+    background-color: white;
+    border-radius: 20px;
+    border: #FFFFFF;
+    margin: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(121, 121, 121, 0.2)
+}
+
+.btnFilter:hover{
+    color: #ffffff;
+    background-color:#43AC99;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 5px;
 }
 
 .pukachu{
+    background-image: url(pikachu.png);
     width: 500px;
     height: 400px;
-    margin: 70px;
-    display:flex;
-    justify-content: center;
-    align-content: center; 
+    margin: 0 auto;
+   
+    
 }
 
 h1{
@@ -39,25 +61,19 @@ h1{
 }
 
 #text, .texto {
-    
     margin:50px 250px ;
     display:flex; 
     justify-content: center;
     flex-flow: column;
     align-items: center;
     font-family: Helvetica, sans-serif;
-    font-style: normal;
-    
+    font-style: normal;   
 }
-
-
 
 footer{
     width: 1500px;
     height: 500px;
     background-image: url(footer.png);
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
 }
-

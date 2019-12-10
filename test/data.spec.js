@@ -1,13 +1,11 @@
-// importamos la función `example`
-import { example } from "../src/data";
+import { filterPokemonType } from '../src/data';
 
-describe('example', () => {
-
+describe('filterPokemonType', () => {
   it('debería ser una función', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof filterPokemonType).toBe('function');
   });
 
-  describe('example', () => {
+  describe('filterPokemonType', () => {
     // escribe aquí tu test
   });
 });
