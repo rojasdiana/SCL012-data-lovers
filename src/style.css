@@ -1,16 +1,27 @@
 body{
-    background-image: url(fondo.png);
+    background-image: url(img/fondo.png);
     background-repeat: no-repeat; 
     background-attachment: fixed;
     background-size: cover;  
 }
-
 .logo{ 
     width: 400px;
     height: 240px;
     margin:auto;
     display:block;
 }
+.btnMenu{
+
+    width: 247px;
+    height: 50px;
+    background: linear-gradient(90deg, #C6F8EF -6.88%, rgba(255, 255, 255, 0) 50.2%), #4CC7B1;
+    border-radius: 29px;
+    border: white;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 17pt;
+}
+
 
 .botones{
   
@@ -18,62 +29,95 @@ body{
     display:flex; 
     justify-content: center;
     align-items: center;
+
 }
-
-
-
-
-    
+.botonesMenu{
+  
+    margin:10px auto;
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    width: 247px;
+    height: 50px;
+    background: linear-gradient(90deg, #C6F8EF -6.88%, rgba(255, 255, 255, 0) 50.2%), #4CC7B1;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.09);
+    border-radius: 29px;
+    border: white;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 17pt;
+    }
 
 .btnFilter{
     width: 30%;
-    height: 30%;
+    height: 30px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 17px;
     color: #43AC99;
     background-color: white;
     border-radius: 20px;
     border: #FFFFFF;
     margin: 5px;
-    box-shadow: 2px 2px 2px 1px rgba(121, 121, 121, 0.2)
+    box-shadow: 2px 2px 2px 1px rgba(121, 121, 121, 0.2);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 .btnFilter:hover{
     color: #ffffff;
-    background-color:#43AC99;
+    background-color:rgb(84, 201, 179);
     margin-left: auto;
     margin-right: auto;
     margin: 5px;
 }
 
 .pukachu{
-    background-image: url(pikachu.png);
-    width: 500px;
-    height: 400px;
+    background-image: url(img/pikachu.png);
+    width: 700px;
+    height: 500px;
     margin: 0 auto;
-   
-    
+    background-repeat: no-repeat;background-size: cover;
 }
 
 h1{
-    font-family:Helvetica, sans-serif;
-    font-style: normal;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: rgb(145, 145, 145);
+    text-align: center;
+    font-size: 18pt;
 }
 
 #text, .texto {
-    margin:50px 250px ;
-    display:flex; 
+    margin: 25px 250px ;
+    display: flex; 
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    font-family: Helvetica, sans-serif;
-    font-style: normal;   
+    font-family: 'Helvetica Neue', sans-serif;
+    color: rgb(110, 110, 110);
 }
 
 footer{
-    width: 1500px;
     height: 500px;
-    background-image: url(footer.png);
+    background-image: url(img/footer.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.pokemonGo{
+    width: 300px;
+    height: 190px;
+    background-image: url(img/logopoke.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0 auto;
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+
+}
+img{
+    width: 22px;
+    height: 22px;
+    background-size: cover;
+    margin-right: 12px;
+    margin-top: 3px;
 }
