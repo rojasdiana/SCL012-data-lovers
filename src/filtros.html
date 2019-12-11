@@ -8,30 +8,26 @@
   <link rel="stylesheet" href="style.css" />
 </head> 
 <header>
-  <img class="logo" src="logo2.png">
-  <div class="botones"> 
-    <button id="planta" class="btnFilter" value="Grass">Planta </button> 
-    <button id="agua" class="btnFilter"value="Water">Agua </button> 
-    <button id="fuego" class="btnFilter" value="Fire">Fuego </button>
-    <button id="aire" class="btnFilter" value="Flying">Aire </button> 
-    <button id="electrico" class="btnFilter" value="Electric">Eléctrico </button> 
-    <button id="psiquico" class="btnFilter" value="Psychic">Psíquico </button> 
-    <button id="todos" class="btnFilter" value="todos">Todos </button> 
-
-  
+  <img class="logo" src="img/logo2.png">
+  <div class="botonesMenu"> 
+    <a href="index.html"><button class="btnMenu">Inicio</button></a>   
+    <a href="filtros.html"><button class="btnMenu">Pokémones</button></a> 
   </div>
-    
-  
-  </header> 
-  <body>
+  <div class="botones"> 
+    <button id="planta" class="btnFilter" value="Grass"><img src="img/hoja.png">Planta </button> 
+    <button id="agua" class="btnFilter"value="Water"><img src="img/gotas.png">Agua </button> 
+    <button id="fuego" class="btnFilter" value="Fire"><img src="img/fuego.png">Fuego </button>
+    <button id="aire" class="btnFilter" value="Flying"><img src="img/aire.png">Aire </button> 
+    <button id="electrico" class="btnFilter" value="Electric"><img src="img/electricidad.png">Eléctrico </button> 
+    <button id="psiquico" class="btnFilter" value="Psychic"><img src="img/psiquico.png">Psíquico</button> 
+    <button id="todos" class="btnFilter" value="todos"><img src="img/todo.png">Todos </button>
+   </div>
+</header>
+
+<body>
   <div id="pokemonesFiltrados"></div>
- 
-    <footer>
-        
-    </footer>
- 
-    
-    <!-- <body background="fondo.png"></body> -->
-    <script type="module" src="main.js"></script>
-  </body>
+  <div class="pokemonGo"></div>
+  <footer></footer>
+  <script type="module" src="main.js"></script>
+</body>
   </html>
