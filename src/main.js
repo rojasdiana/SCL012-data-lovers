@@ -1,4 +1,5 @@
 import { filterPokemonType } from './data.js';
+import pokemon from './data/pokemon/pokemon.js';
 
 const planta = document.getElementById('planta');
 
@@ -9,7 +10,7 @@ planta.addEventListener('click', () => {
   const divFiltrados = document.getElementById('pokemonesFiltrados');
    
   for (let i = 0; i < resultado.length; i += 1) {
-    divFiltrados.innerHTML += resultado[i].name;
+    divFiltrados.innerHTML += `${pokePoke(resultado[i])}`
   }
 });
 
@@ -21,7 +22,7 @@ agua.addEventListener('click', () => {
   const divFiltrados = document.getElementById('pokemonesFiltrados');
    
   for (let i = 0; i < resultado.length; i += 1) {
-    divFiltrados.innerHTML += resultado[i].name;
+    divFiltrados.innerHTML += `${pokePoke(resultado[i])}`
   }
 });
 
@@ -33,7 +34,7 @@ fuego.addEventListener('click', () => {
   const divFiltrados = document.getElementById('pokemonesFiltrados');
 
   for (let i = 0; i < resultado.length; i += 1) {
-    divFiltrados.innerHTML += resultado[i].name;
+    divFiltrados.innerHTML += `${pokePoke(resultado[i])}`
   }
 });
 
@@ -44,7 +45,7 @@ aire.addEventListener('click', () => {
   const divFiltrados = document.getElementById('pokemonesFiltrados');
 
   for (let i = 0; i < resultado.length; i += 1) {
-    divFiltrados.innerHTML += resultado[i].name;
+    divFiltrados.innerHTML += `${pokePoke(resultado[i])}`
   }
 });
 
@@ -55,7 +56,7 @@ electrico.addEventListener('click', () => {
   const divFiltrados = document.getElementById('pokemonesFiltrados');
 
   for (let i = 0; i < resultado.length; i += 1) {
-    divFiltrados.innerHTML += resultado[i].name;
+    divFiltrados.innerHTML += `${pokePoke(resultado[i])}`
   }
 });
 
@@ -66,9 +67,10 @@ psiquico.addEventListener('click', () => {
   const divFiltrados = document.getElementById('pokemonesFiltrados');
 
   for (let i = 0; i < resultado.length; i += 1) {
-    divFiltrados.innerHTML += resultado[i].name;
+    divFiltrados.innerHTML += `${pokePoke(resultado[i])}`
   }
 });
+
 
 const todos = document.getElementById('todos');
 todos.addEventListener('click', () => {
@@ -76,7 +78,37 @@ todos.addEventListener('click', () => {
   const resultado = filterPokemonType(todosValue);
   const divFiltrados = document.getElementById('pokemonesFiltrados');
 
+
   for (let i = 0; i < resultado.length; i += 1) {
-    divFiltrados.innerHTML += resultado[i].name;
+    divFiltrados.innerHTML += `${pokePoke(resultado[i])}`
+    
   }
 });
+
+
+// Card pokemon
+
+
+
+function pokePoke(paramPoke){
+ return`
+  <div class="wrap">
+    <div class="tarjeta">
+       <div class="infopoke">
+        <h4>${paramPoke.name}</h4>
+         <img src="${paramPoke.img}" alt="imagen poke"></img>
+         <p>${paramPoke.num}</p>
+       </div>
+        <div class="atras">
+          <img src="${paramPoke.img}" alt="imagen poke"></img>
+           <lo>
+            <li>Type: ${paramPoke.type}</li>
+            <li>Height: ${paramPoke.height}</li>
+            <li>Weaknesses: ${paramPoke.weaknesses}</li>
+            <li>Prev_evolution${paramPoke.prev_evolution}</li>
+           </lo>
+        </div>
+    </div>
+  </div>`
+  
+}
