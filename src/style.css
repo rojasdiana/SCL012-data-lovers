@@ -22,12 +22,7 @@ body{
     font-size: 17pt;
 }
 
-    margin:10px auto;
-    display:flex; 
-    justify-content: center;
-    align-items: center;
-
-}
+  
 .botonesMenu{
   
     margin:10px auto;
@@ -110,10 +105,80 @@ footer{
     align-items: center;
 
 }
-img{
+.animal{
     width: 22px;
     height: 22px;
     background-size: cover;
     margin-right: 12px;
     margin-top: 3px;
 }
+
+
+
+.wrap{
+    margin: 50px auto;
+	display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    width: 300px;
+    height: 350px;
+    position: relative;
+}
+
+
+.tarjeta{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+	width: 300px;
+	height: 350px;
+	background:linear-gradient(90deg, #C6F8EF -6.88%, rgba(255, 255, 255, 0) 50.2%), rgb(127, 228, 210);
+	transform-style: preserve-3d;
+	transition: .7s ease;
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+    text-align: center;
+    color: rgb(5, 126, 124);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+/* imagen pokemon */
+.grande{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   width: 100px;
+    height: 100px;
+   
+}
+
+
+
+/* caracteristicas  */
+.atras{
+	transform: rotateY(180deg);
+    padding-inline-end: 15px;
+    padding-left: 20px; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+	color: rgb(12, 129, 110);
+	font-family: Arial, Helvetica, sans-serif;
+    background: rgb(137, 232, 218);
+    flex-direction: column-reverse;
+}
+.atras .h4{
+    padding-bottom: 3px;
+    
+
+}
+.wrap:hover .tarjeta{
+	transform: rotateY(180deg); 
+}
+
+.wrap:hover .infopoke{
+    display:none;
+}
+

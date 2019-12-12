@@ -96,7 +96,11 @@ function pokePoke(paramPoke){
     <div class="tarjeta">
        <div class="infopoke">
         <h4>${paramPoke.name}</h4>
-         <img src="${paramPoke.img}" alt="imagen poke"></img>
+
+        <div class="imagenpoke">
+         <img class="grande" src="${paramPoke.img}" alt="imagenpoke"></img>
+         </div>
+         
          <p>${paramPoke.num}</p>
        </div>
         <div class="atras">
