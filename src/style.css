@@ -1,10 +1,9 @@
 body{
-    background-image: url(fondo.png);
+    background-image: url(img/fondo.png);
     background-repeat: no-repeat; 
     background-attachment: fixed;
     background-size: cover;  
 }
-
 .logo{ 
     width: 400px;
     height: 240px;
@@ -22,8 +21,15 @@ body{
     color: rgb(255, 255, 255);
     font-size: 17pt;
 }
-.botonesMenu{
 
+    margin:10px auto;
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+
+}
+.botonesMenu{
+  
     margin:10px auto;
     display:flex; 
     justify-content: center;
@@ -41,23 +47,20 @@ body{
 
 .btnFilter{
     width: 30%;
-    height: 30%;
     height: 30px;
     font-weight: 400;
-    font-size: 20px;
     font-size: 17px;
     color: #43AC99;
     background-color: white;
     border-radius: 20px;
     border: #FFFFFF;
     margin: 5px;
-    box-shadow: 2px 2px 2px 1px rgba(121, 121, 121, 0.2)
-    font-family-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    box-shadow: 2px 2px 2px 1px rgba(121, 121, 121, 0.2);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 .btnFilter:hover{
     color: #ffffff;
-    background-color:#43AC99;
     background-color:rgb(84, 201, 179);
     margin-left: auto;
     margin-right: auto;
@@ -65,21 +68,14 @@ body{
 }
 
 .pukachu{
-    background-image: url(pikachu.png);
-    width: 500px;
-    height: 400px;
     background-image: url(img/pikachu.png);
     width: 700px;
     height: 500px;
     margin: 0 auto;
     background-repeat: no-repeat;background-size: cover;
-   
-    
 }
 
 h1{
-    font-family:Helvetica, sans-serif;
-    font-style: normal;
     font-family: 'Helvetica Neue', sans-serif;
     color: rgb(145, 145, 145);
     text-align: center;
@@ -87,19 +83,18 @@ h1{
 }
 
 #text, .texto {
-    margin:50px 250px ;
-    display:flex; 
+    margin: 25px 250px ;
+    display: flex; 
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    font-family: Helvetica, sans-serif;
-    font-style: normal;   
+    font-family: 'Helvetica Neue', sans-serif;
+    color: rgb(110, 110, 110);
 }
 
 footer{
-    width: 1500px;
     height: 500px;
-    background-image: url(footer.png);
+    background-image: url(img/footer.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -115,79 +110,10 @@ footer{
     align-items: center;
 
 }
-/* img{
+img{
     width: 22px;
     height: 22px;
     background-size: cover;
     margin-right: 12px;
     margin-top: 3px;
-} */
-
-
-.wrap{
-    margin: 50px auto;
-	display: inline-flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content:flex-start;
-    width: 300px;
-    height: 350px;
-    position: relative;
 }
-
-
-.tarjeta{
-    display: flex;
-    flex-flow: row wrap;
-	width: 300px;
-	height: 350px;
-	background:linear-gradient(90deg, #C6F8EF -6.88%, rgba(255, 255, 255, 0) 50.2%), rgb(127, 228, 210);
-	position: inherit;
-	transform-style: preserve-3d;
-	transition: .7s ease;
-	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
-    text-align: center;
-    color: rgb(5, 126, 124);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-}
-
-/* .infopoke{
-    display: flex;
-  flex-flow: wrap;
-} */
-
-/* caracteristicas  */
-.atras{
-	margin: 0%;
-	transform: rotateY(180deg);
-    padding-inline-end: 15px;
-    padding-left: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
-	color: rgb(3, 75, 68);
-	font-family: Arial, Helvetica, sans-serif;
-    background: rgb(102, 181, 169);
-    opacity: 80%;
-    flex-direction: column-reverse;
-}
-.atras .h4{
-    padding-bottom: 3px;
-    
-
-
-}
-.wrap:hover .tarjeta{
-	transform: rotateY(180deg); 
-}
-
-.wrap:hover .infopoke{
-    display:none;
-}
-
-
-
-
