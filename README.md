@@ -55,11 +55,11 @@ En este proceso nos acercamos al diseño final de nuestra página web. Con la pl
 
 Para realizar cualquier proyecto que se adecue de la mejor forma a las necesidades del usuario, los test de usabiliad nos ayudarán a tener persepciones reales y directas con usuarios.
 
-- [Video Nº1]()
-- [Video Nº2]()
-- [Video Nº3]()
-- [Video Nº4]()
-- [Video Nº5]()
+- [Video Nº1](https://www.loom.com/share/1940d1f43fa4458aacd0ca6163cd7388)
+- [Video Nº2](https://www.loom.com/share/c4c1f64758354898afd69aa87624e225)
+- [Video Nº3](https://www.loom.com/share/c5b4c77e784941588cc788343d858f01)
+- [Video Nº4](https://www.loom.com/share/f7f98fd884e8476a829eea20b7c4bae3)
+- [Video Nº5](https://www.loom.com/share/0e451c44331d46b68d098380fbaa6e53)
 
 Junto con los Test de Usabilidad surgió un punto clave que se consideró en la iteración de la página web.
 
