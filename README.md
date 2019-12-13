@@ -35,8 +35,8 @@ En esta etapa, el proyecto comienza a tener forma y se realizan los primeros pro
 Con lo requerido en los criterios de aceptación se torna mas fácil a la hora de elegir como construir la página. sólo queda darle la estructura.
 
 
-![prototiposketch]()
-![prototiposketch2]()
+![prototiposketch1](https://github.com/rojasdiana/SCL012-data-lovers/blob/master/src/img/sketch1.png)
+![prototiposketch2](https://github.com/rojasdiana/SCL012-data-lovers/blob/master/src/img/sketch2.png)
 
 
 * Prototipo de Alta fidelidad
