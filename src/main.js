@@ -67,7 +67,7 @@ psiquico.addEventListener('click', () => {
   const divFiltrados = document.getElementById('pokemonesFiltrados');
   divFiltrados.innerHTML = ""; 
   for (let i = 0; i < resultado.length; i += 1) {
-    divFiltrados.innerHTML += `${pokePoke(resultado[i])}`
+    divFiltrados.innerHTML += `${pokePoke(resultado[i])}`;
   }
 });
 
@@ -80,7 +80,7 @@ todos.addEventListener('click', () => {
   divFiltrados.innerHTML = ""; 
 
   for (let i = 0; i < resultado.length; i += 1) {
-    divFiltrados.innerHTML += `${pokePoke(resultado[i])}`
+    divFiltrados.innerHTML += `${pokePoke(resultado[i])}`;
     
   }
 });
