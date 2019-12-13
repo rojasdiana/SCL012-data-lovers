@@ -92,19 +92,20 @@ function pokePoke(paramPoke){
     <div class="tarjeta">
        <div class="infopoke">
         <h4>${paramPoke.name}</h4>
-
+        <p>${paramPoke.num}</p>
         <div class="imagenpoke">
          <img class="grande" src="${paramPoke.img}" alt="imagenpoke"></img>
          </div>
          
-         <p>${paramPoke.num}</p>
+         
        </div>
         <div class="atras">
           <img src="${paramPoke.img}" alt="imagen poke"></img>
            <lo>
-            <li>Type: ${paramPoke.type}</li>
-            <li>Height: ${paramPoke.height}</li>
-            <li>Weaknesses: ${paramPoke.weaknesses}</li>
+            <li>Tipo: ${paramPoke.type}</li>
+            <li>Altura: ${paramPoke.height}</li>
+            <li>Peso: ${paramPoke.height}</li>
+            <li>Debilidad: ${paramPoke.weaknesses}</li>
 
            </lo>
         </div>
