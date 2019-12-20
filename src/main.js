@@ -1,5 +1,6 @@
 import { filterPokemonType } from './data.js';
 
+
 function pokePoke(paramPoke) {
   return `
    <div class="wrap">
@@ -20,6 +21,8 @@ function pokePoke(paramPoke) {
              <li>Altura: ${paramPoke.height}</li>
              <li>Peso: ${paramPoke.height}</li>
              <li>Debilidad: ${paramPoke.weaknesses}</li>
+             <li> Evolución: ${paramPoke.next_evolution ? paramPoke.next_evolution[0].name : 'N/A'}</li>
+             <li> Involución: ${paramPoke.prev_evolution ? paramPoke.prev_evolution[0].name : 'N/A'}</li>
             </lo>
          </div>
      </div>
@@ -106,3 +109,4 @@ todos.addEventListener('click', () => {
     divFiltrados.innerHTML += `${pokePoke(resultado[i])}`;
   }
 });
+
