@@ -13,18 +13,23 @@
     <a href="index.html"><button class="btnMenu">Inicio</button></a>   
     <a href="filtros.html"><button class="btnMenu">Pokémones</button></a> 
   </div>
-  <div class="botones"> 
-    
-    <button id="planta" class="btnFilter" value="Grass"><img class="animal" src="img/hoja.png">Planta </button> 
-    <button id="agua" class="btnFilter"value="Water"><img class="animal" src="img/gotas.png">Agua </button> 
-    <button id="fuego" class="btnFilter" value="Fire"><img class="animal" src="img/fuego.png">Fuego </button>
-    <button id="aire" class="btnFilter" value="Flying"><img class="animal"src="img/aire.png">Aire </button> 
-    <button id="electrico" class="btnFilter" value="Electric"><img class="animal"src="img/electricidad.png">Eléctrico </button> 
-    <button id="psiquico" class="btnFilter" value="Psychic"><img class="animal"src="img/psiquico.png">Psíquico</button> 
-    <button id="todos" class="btnFilter" value="todos"><img class="animal"src="img/todo.png">Todos </button>
+  <div>
+    <select name="ordenar" id="order" class="selector">
+      <option value="selectorOrdenar">Ordenar</option>
+      <option value="az">De A-Z</option>
+      <option value="za">De Z-A</option>
+    </select>
+  </div>
+  <div class="botones">
+    <button id="planta" class="btnFilter" value="Grass"><img class="animal" src="img/hoja.png">Planta</button>
+    <button id="agua" class="btnFilter" value="Water"><img class="animal" src="img/gotas.png">Agua</button>
+    <button id="fuego" class="btnFilter" value="Fire"><img class="animal" src="img/fuego.png">Fuego</button>
+    <button id="aire" class="btnFilter" value="Flying"><img class="animal" src="img/aire.png">Aire</button>
+    <button id="electrico" class="btnFilter" value="Electric"><img class="animal" src="img/electricidad.png">Eléctrico</button>
+    <button id="psiquico" class="btnFilter" value="Psychic"><img class="animal" src="img/psiquico.png">Psíquico</button>
+    <button id="todos" class="btnFilter" value="todos"><img class="animal" src="img/todo.png">Todos</button>
    </div>
 </header>
-
 <body>
   <div id="pokemonesFiltrados"></div>
   <div class="pokemonGo"></div>
